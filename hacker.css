@@ -14,11 +14,16 @@ body {
     text-align: center;
 }
 
-h1, h2 {
-    text-shadow: 0 0 10px #33ff33;
-    margin-bottom: 20px;
+/* General Section Style */
+section {
+    border: 2px solid #33ff33;  /* Adds the border for each section */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #111; /* Dark background for contrast */
 }
 
+/* Specific Styles */
 .profile {
     margin-top: 50px;
 }
@@ -31,15 +36,13 @@ h1, h2 {
     margin-bottom: 15px;
 }
 
-p {
-    font-size: 1.2em;
+h1, h2 {
+    text-shadow: 0 0 10px #33ff33;
     margin-bottom: 20px;
 }
 
 .projects, .ongoing-projects, .documentation {
-    margin-top: 50px;
     text-align: left;
-    padding-left: 20px;
 }
 
 select {
