@@ -4,18 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AlexKiwe - Hacker Style</title>
+    <title>AlexKiwe - Hacker Academic</title>
     <link rel="stylesheet" href="hacker.css">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Hacker Zone</h1>
-        <p>This is AlexKiwe's personal website, designed with a hacker theme.</p>
-        <p><em>Loading...</em></p>
-        <p class="terminal">
-            > AlexKiwe.github.io loaded successfully.<br>
-            > Please type <span class="highlight">help</span> to get started.
-        </p>
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="assets/photo.jpg" alt="Your Photo" class="profile-pic">
+            <h1>AlexKiwe</h1>
+            <p>4th year student at the Technical Military Academy 'Ferdinand I'. Specializing in AI model security and operating systems design.</p>
+            <p><strong>Email:</strong> alikiwe2002@gmail.com</p>
+        </div>
+
+        <!-- Dropdown for Public GitHub Projects -->
+        <div class="projects">
+            <h2>Public GitHub Projects</h2>
+            <select id="project-dropdown">
+                <option value="">Select a Project</option>
+                <option value="https://github.com/AlexKiwe/Project1">Project 1</option>
+                <option value="https://github.com/AlexKiwe/Project2">Project 2</option>
+                <option value="https://github.com/AlexKiwe/Project3">Project 3</option>
+            </select>
+            <button onclick="goToProject()">Go to Project</button>
+        </div>
+
+        <!-- Ongoing Projects Section -->
+        <div class="ongoing-projects">
+            <h2>Ongoing Projects</h2>
+            <ul>
+                <li>Machine Learning-Based DDoS Detection System</li>
+                <li>Key-Value Database with Multi-Threading</li>
+                <li>AI Model Security System with Adversarial Attack Testing</li>
+            </ul>
+        </div>
+
+        <!-- Documentation Section -->
+        <div class="documentation">
+            <h2>Documentation</h2>
+            <p>This section will provide technical documentation for all major projects and research topics, including:</p>
+            <ul>
+                <li>How the Key-Value Database works with persistence</li>
+                <li>DDoS Detection Algorithms</li>
+                <li>Securing AI Models with Advanced Techniques</li>
+            </ul>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2024 AlexKiwe | Contact: <a href="mailto:alikiwe2002@gmail.com">alikiwe2002@gmail.com</a></p>
+        </footer>
     </div>
+
+    <script>
+        function goToProject() {
+            var dropdown = document.getElementById("project-dropdown");
+            var projectUrl = dropdown.value;
+            if (projectUrl) {
+                window.open(projectUrl, "_blank");
+            }
+        }
+    </script>
 </body>
 </html>
