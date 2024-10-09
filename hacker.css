@@ -1,0 +1,42 @@
+/* hacker.css */
+body {
+    background-color: #000;
+    color: #33ff33;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 0 0 10px #33ff33;
+}
+
+p {
+    font-size: 1.5em;
+    color: #33ff33;
+}
+
+.terminal {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+.highlight {
+    color: #ff0000;
+}
+
+em {
+    color: #888;
+    font-style: italic;
+}
