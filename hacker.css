@@ -1,4 +1,4 @@
-/* hacker-academic.css */
+/* hacker.css */
 body {
     background-color: #000;
     color: #33ff33;
@@ -11,19 +11,19 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Style for sections */
+section {
+    border: 2px solid #33ff33;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #111;
     text-align: center;
 }
 
-/* General Section Style */
-section {
-    border: 2px solid #33ff33;  /* Adds the border for each section */
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 10px; /* Rounded corners */
-    background-color: #111; /* Dark background for contrast */
-}
-
-/* Specific Styles */
+/* Specific section styling */
 .profile {
     margin-top: 50px;
 }
@@ -39,10 +39,6 @@ section {
 h1, h2 {
     text-shadow: 0 0 10px #33ff33;
     margin-bottom: 20px;
-}
-
-.projects, .ongoing-projects, .documentation {
-    text-align: left;
 }
 
 select {
